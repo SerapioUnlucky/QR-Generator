@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR</title>
+
+    <link rel="preload" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div class="form">
+
+        <h1>Código QR</h1>
+
+        <form>
+
+            <input type="url" id="website" name="website" placeholder="Ingrese la URL" required>
+
+            <div id="qrcode-container" class="qrcode-container">
+
+                <div id="qrcode" class="qrcode"></div>
+
+            </div>
+
+            <button type="button" onclick="generateQRCode()">Generar código QR</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<script src="script.js"></script>
+
+</html>
